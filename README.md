@@ -1,6 +1,6 @@
 ## Introduction
 
-Hello, I’m Ewanretor Giwa-Okugbe. Junior developer and fullstack development, with focus on frontend development.
+Hello, I’m Ewanretor Giwa-Okugbe. Junior and fullstack developer, with focus on frontend development.
 
 #### 👀 I’m interested in ...
 - 💻 Programming
@@ -16,7 +16,7 @@ Hello, I’m Ewanretor Giwa-Okugbe. Junior developer and fullstack development, 
 - ✔  Junior developer roles
 #### 📫 How to reach me ...
 - 🔵 Twitter: [Lord Ewan](https://twitter.com/ewanretorokugbe)
-- 📧 Email: [ewanretorokugbe@gmail.com](https://ewanretorokugbe@gmail.com)
+- 📧 Email: [ewanretorokugbe@gmail.com](https://mail.ewanretorokugbe@gmail.com)
 <!---
 LordEwans/LordEwans is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
