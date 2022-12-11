@@ -1,6 +1,6 @@
 ## Introduction
 
-Hello, I’m Ewanretor Giwa-Okugbe. Junior and fullstack developer, with focus on frontend development.
+Hello, I’m Ewanretor Giwa-Okugbe. Junior Fullstack developer, with focus on Frontend development.
 
 #### 👀 I’m interested in ...
 - 💻 Programming
