@@ -9,11 +9,13 @@ Hello, I’m Ewanretor Giwa-Okugbe. Junior Fullstack developer, with focus on Fr
 - 🔌 Creating plugins
 - 🏓 Playing table tennis
 - 📦 Backend development
+- 🔗 Web3 development
 #### 🌱 I’m currently learning ...
-- 🎹 Playing the violin
+- 🎻 Playing the violin
 #### 💞️ I’m looking to collaborate on ...
-- 🔷 Fullstack application
-- ✔  Junior developer roles
+- 🔷 Fullstack applications
+- ⌨️ Hire
+- ✔  Web3 developer roles
 #### 📫 How to reach me ...
 - 🔵 Twitter: [Lord Ewan](https://twitter.com/ewanretorokugbe)
 - 📧 Email: [ewanretorokugbe@gmail.com](https://mailto:ewanretorokugbe@gmail.com)
