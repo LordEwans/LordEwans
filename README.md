@@ -21,7 +21,7 @@ Hello, I’m Ewanretor Giwa-Okugbe. Backend, Blockchain, Web3 Developer.
 - 📧 Email: [ewanretorokugbe@gmail.com](mailto:ewanretorokugbe@gmail.com)
 
 ![Github Stats](https://github-readme-stats.vercel.app/api?username=LordEwans&show_icons=true&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=LordEwans&show_icons=true&locale=en&layout=donut)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=LordEwans&show_icons=true&locale=en&layout=donut&theme=radical)
 <!---
 LordEwans/LordEwans is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
