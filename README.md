@@ -15,7 +15,7 @@ Hello, I’m Ewanretor Giwa-Okugbe. Backend, Blockchain, Web3 Developer.
 #### 💞️ I’m looking to collaborate on ...
 - 🔷 Fullstack applications
 - ⌨️ Hire
-- ✔  Web3 developer roles
+- 🔗  Web3 developer roles
 #### 📫 How to reach me ...
 - 🔵 Twitter: [Lord Ewan](https://twitter.com/ewanretorokugbe)
 - 📧 Email: [ewanretorokugbe@gmail.com](mailto:ewanretorokugbe@gmail.com)
