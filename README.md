@@ -4,6 +4,7 @@ Hello, I’m Ewanretor Giwa-Okugbe. Backend, Blockchain, Web3 Developer.
 
 ### Versatile and Efficient
 I use a ton of tools, which includes but not limited to these.
+
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=LordEwans&show_icons=true&locale=en&layout=donut&theme=transparent)
 
 ### CV
