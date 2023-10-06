@@ -9,7 +9,7 @@ I use a ton of tools, which includes but not limited to these.
 
 ### CV
 Download my CV (Resume), you just might considr me for that next role.
-<a href="https://github.com/lordewans/lordewans/CV (Resume).pdf" >CV (Resume)</a>
+<a href="https://github.com/lordewans/lordewans/blob/main/CV (Resume).pdf" >CV (Resume)</a>
 
 ### Contact
 Reach out to me via these media.
