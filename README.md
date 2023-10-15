@@ -8,7 +8,7 @@ I use a ton of tools, which includes but not limited to these.
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=LordEwans&show_icons=true&locale=en&layout=donut&theme=transparent)
 
 ### CV
-Download my CV (Resume), you just might considr me for that next role.
+Download my CV (Resume), you just might consider me for that next role.
 <a href="https://github.com/lordewans/lordewans/blob/main/CV (Resume).pdf" >CV (Resume)</a>
 
 ### Contact
