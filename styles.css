@@ -111,3 +111,9 @@ button.active,
   box-shadow: 0 0px 0 var(--btn-primary);
   transform: translateY(6px);
 }
+
+.ib {
+  font-weight: bold;
+  font-style: italic;
+  background: var(--primary);
+}
