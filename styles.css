@@ -40,7 +40,6 @@ body {
   background: white;
   color: black;
   font-family: "SpaceMono";
-  height: 120vh;
   scrollbar-width: thin;
   scrollbar-color: var(--primary) #000;
   scroll-behavior: smooth;

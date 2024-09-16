@@ -8,41 +8,74 @@
 	<script src="main.js"></script>
 </head>
 <body>
-	<div style="display: flex; align-items: center; justify-content: start;">
-		<button onclick="" id="btn0" class="btn0">Hello</button>
-		<button onclick="" id="btn1" class="btn1">World</button>
+	<div
+		style="display: flex; align-items: center; justify-content: start; flex-direction: row; height: 100%; width: 100%;">
+		<nav
+			style="display: flex; flex-direction: column; align-items: center; justify-content: start; width: 54px; position: fixed;">
+			<button id="home" class="btn3" title="Go Home"><img src="./img/svgs/home.svg" alt="Home Icon"></button>
+			<button id="about" class="btn2" title="About Me"><img src="img/svgs/user.svg" alt="About Icon"></button>
+			<button id="portfolio" class="btn3" title="View Portfolio"><img src="img/svgs/code.svg"
+					alt="Portfolio Icon"></button>
+			<button id="contact" class="btn2" title="Contact Me"><img src="img/svgs/at-sign.svg"
+					alt="Contact Icon"></button>
+		</nav>
+		<div id="main" style="width: calc(100% - 64px); margin-left: 64px; text-align: center; height: 100%;">
+			<section id="home"
+				style="display: flex; align-items: center; justify-content: center; flex-direction: column; height: 100%; width: 100%;">
+				<h1 style="color: var(--btn-primary); font-size: 3rem; line-height: inherit; margin: 0;">hey there, I'm
+					Ewanretor/ewanretə(r)/.</h1>
+				<h2 style="color: var(--btn-primary); font-size: 1.5rem; margin: 0;">a software engineer, founder and
+					indie hacker</h2>
+				<div style="display: flex; align-items: center; justify-content: start;">
+					<button
+						onclick="window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2m16XmLawdqTnUeCFtbmuimMNzIWGJyOjI5q09ZgClfEFaKT_foiWlNE-x2EbTi6yozcyOKwHD', '_blank')"
+						id="btn0" class="btn0">Book Meeting</button>
+					<button onclick="window.open('mailto:hey@lordewan.com', '_blank')" id="btn1"
+						class="btn1">Email</button>
+				</div>
+				<p>Press the Enter key to <span class="ib">Book a Meeting</span> or hold the Shift key alongside Enter
+					to
+					<span class="ib">Email</span>.
+				</p>
+			</section>
+			<section id="about"
+				style="display: flex; align-items: center; justify-content: center; flex-direction: column; height: 50%; width: 100%;">
+				<div class=" alphabets"
+				style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: 100%;">
+				<button id="btn-a" class="btn3">A</button>
+				<button id="btn-b" class="btn2">B</button>
+				<button id="btn-c" class="btn3">C</button>
+				<button id="btn-d" class="btn2">D</button>
+				<button id="btn-e" class="btn3">E</button>
+				<button id="btn-f" class="btn2">F</button>
+				<button id="btn-g" class="btn3">G</button>
+				<button id="btn-h" class="btn2">H</button>
+				<button id="btn-i" class="btn3">I</button>
+				<button id="btn-j" class="btn2">J</button>
+				<button id="btn-k" class="btn3">K</button>
+				<button id="btn-l" class="btn2">L</button>
+				<button id="btn-m" class="btn3">M</button>
+				<button id="btn-n" class="btn2">N</button>
+				<button id="btn-o" class="btn3">O</button>
+				<button id="btn-p" class="btn2">P</button>
+				<button id="btn-q" class="btn3">Q</button>
+				<button id="btn-r" class="btn2">R</button>
+				<button id="btn-s" class="btn3">S</button>
+				<button id="btn-t" class="btn2">T</button>
+				<button id="btn-u" class="btn3">U</button>
+				<button id="btn-v" class="btn2">V</button>
+				<button id="btn-w" class="btn3">W</button>
+				<button id="btn-x" class="btn2">X</button>
+				<button id="btn-y" class="btn3">Y</button>
+				<button id="btn-z" class="btn2">Z</button>
+		</div>
+		<p>Press any of the keys to toggle the corresponding <span class="ib">Button</span>.</p>
+		</section>
+		<section id="portfolio"></section>
+		<section id="contact"></section>
 	</div>
-	<h2>Title</h2>
-	<p>Press the Enter key to toggle <span class="ib">Hello</span> and hold the Shift key to toggle <span
-			class="ib">World</span>.</p>
-	<div class="alphabets" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: 100%;">
-		<button id="btn-a" class="btn3">A</button>
-		<button id="btn-b" class="btn2">B</button>
-		<button id="btn-c" class="btn3">C</button>
-		<button id="btn-d" class="btn2">D</button>
-		<button id="btn-e" class="btn3">E</button>
-		<button id="btn-f" class="btn2">F</button>
-		<button id="btn-g" class="btn3">G</button>
-		<button id="btn-h" class="btn2">H</button>
-		<button id="btn-i" class="btn3">I</button>
-		<button id="btn-j" class="btn2">J</button>
-		<button id="btn-k" class="btn3">K</button>
-		<button id="btn-l" class="btn2">L</button>
-		<button id="btn-m" class="btn3">M</button>
-		<button id="btn-n" class="btn2">N</button>
-		<button id="btn-o" class="btn3">O</button>
-		<button id="btn-p" class="btn2">P</button>
-		<button id="btn-q" class="btn3">Q</button>
-		<button id="btn-r" class="btn2">R</button>
-		<button id="btn-s" class="btn3">S</button>
-		<button id="btn-t" class="btn2">T</button>
-		<button id="btn-u" class="btn3">U</button>
-		<button id="btn-v" class="btn2">V</button>
-		<button id="btn-w" class="btn3">W</button>
-		<button id="btn-x" class="btn2">X</button>
-		<button id="btn-y" class="btn3">Y</button>
-		<button id="btn-z" class="btn2">Z</button>
 	</div>
-	<p>Press any of the keys to toggle the corresponding <span class="ib">Button</span>.</p>
 </body>
 </html>
+<!--
+-->
