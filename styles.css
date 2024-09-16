@@ -38,7 +38,7 @@
 
 body {
   background: white;
-  color: var(--primary);
+  color: black;
   font-family: "SpaceMono";
   height: 120vh;
   scrollbar-width: thin;
