@@ -63,12 +63,25 @@ body {
   background: var(--primary);
   color: black;
 }
-button::selection {
+button.btn0::selection {
+  background: black;
+  color: var(--primary);
+}
+button.btn1::selection {
+  background: black;
+  color: white;
+}
+.ib::selection {
   background: black;
   color: var(--primary);
 }
 
 button {
+  margin: 8px;
+}
+
+button.btn0,
+button.btn1 {
   border: none;
   outline: none;
   border: 1px solid var(--btn-primary);
@@ -84,21 +97,42 @@ button {
   height: 44px;
 }
 
-.btn0 {
+button.btn2,
+button.btn3 {
+  border: none;
+  outline: none;
+  border: 1px solid var(--btn-primary);
+  cursor: pointer;
+  padding: 0px 0px;
+  border-radius: 100%;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 0 var(--btn-primary);
+  font-family: "SpaceMono";
+  font-size: 16px;
+  min-width: 44px;
+  height: 44px;
+}
+
+.btn0,
+.btn2 {
   background: var(--primary);
   color: black;
 }
 
-.btn0:hover {
+.btn0:hover,
+.btn2:hover {
   background: #ffd814;
 }
 
-.btn1 {
+.btn1,
+.btn3 {
   background: white;
   color: black;
 }
 
-.btn1:hover {
+.btn1:hover,
+.btn3:active {
   background: white;
 }
 
@@ -107,7 +141,10 @@ button:hover {
 }
 
 button.active,
-.btn0:active, .btn1:active {
+.btn0:active,
+.btn1:active,
+.btn2:active,
+.btn3:active {
   box-shadow: 0 0px 0 var(--btn-primary);
   transform: translateY(6px);
 }

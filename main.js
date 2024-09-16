@@ -9,14 +9,20 @@ document.addEventListener("DOMContentLoaded", () => {
       const button = document.getElementById("btn0");
       button.classList.add("active");
       setTimeout(() => button.classList.remove("active"), 140);
-      sendMessage();
     }
     if (e.key === "Enter" && e.shiftKey) {
       e.preventDefault();
       const button = document.getElementById("btn1");
       button.classList.add("active");
       setTimeout(() => button.classList.remove("active"), 140);
-      sendMessage();
     }
+    const buttonId = `btn-${e.key.toLowerCase()}`;
+    const button = document.getElementById(buttonId);
+    if (button) {
+      e.preventDefault();
+      button.classList.add("active");
+      setTimeout(() => button.classList.remove("active"), 140);
+    }
+    
   });
 });
