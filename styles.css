@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "PixelifySans";
+  src: url("fonts/PixelifySans.woff2");
+}
+
+@font-face {
+  font-family: "SpaceMono";
+  src: url("fonts/SpaceMono-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpaceMono";
+  src: url("fonts/SpaceMono-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpaceMono";
+  src: url("fonts/SpaceMono-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SpaceMono";
+  src: url("fonts/SpaceMono-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+:root {
+  --primary: #ffd60a;
+  --btn-primary: #000;
+}
+
+body {
+  background: white;
+  color: var(--primary);
+  font-family: "SpaceMono";
+  height: 120vh;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) #000;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 8px;
+}
+
+button {
+  border: none;
+  background: var(--primary);
+  outline: none;
+  color: var(--btn-primary);
+  border: 1px solid var(--btn-primary);
+  cursor: pointer;
+  padding: 0px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 0 var(--btn-primary);
+  font-family: "SpaceMono";
+  font-size: 16px;
+  min-width: 100px;
+  height: 44px;
+}
+
+button:hover {
+  background: #ffd814;
+  box-shadow: 0 6px 0 var(--btn-primary);
+}
+
+button.active,
+button:active {
+  box-shadow: 0 2px 0 var(--btn-primary);
+  transform: translateY(6px);
+}
