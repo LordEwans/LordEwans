@@ -59,11 +59,18 @@ body {
   border-radius: 8px;
 }
 
+::selection {
+  background: var(--primary);
+  color: black;
+}
+button::selection {
+  background: black;
+  color: var(--primary);
+}
+
 button {
   border: none;
-  background: var(--primary);
   outline: none;
-  color: var(--btn-primary);
   border: 1px solid var(--btn-primary);
   cursor: pointer;
   padding: 0px 10px;
@@ -77,13 +84,30 @@ button {
   height: 44px;
 }
 
-button:hover {
+.btn0 {
+  background: var(--primary);
+  color: black;
+}
+
+.btn0:hover {
   background: #ffd814;
+}
+
+.btn1 {
+  background: white;
+  color: black;
+}
+
+.btn1:hover {
+  background: white;
+}
+
+button:hover {
   box-shadow: 0 6px 0 var(--btn-primary);
 }
 
 button.active,
-button:active {
-  box-shadow: 0 2px 0 var(--btn-primary);
+.btn0:active, .btn1:active {
+  box-shadow: 0 0px 0 var(--btn-primary);
   transform: translateY(6px);
 }
