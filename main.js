@@ -19,10 +19,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const buttonId = `btn-${e.key.toLowerCase()}`;
     const button = document.getElementById(buttonId);
     if (button) {
-      e.preventDefault();
-      button.classList.add("active");
-      setTimeout(() => button.classList.remove("active"), 140);
+      if (button) {
+        if (
+          !(e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") &&
+          !(e.ctrlKey && e.key.toLowerCase() === "r")
+        ) {
+          e.preventDefault();
+          button.classList.add("active");
+          setTimeout(() => button.classList.remove("active"), 140);
+        }
+      }
     }
-    
   });
 });
