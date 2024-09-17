@@ -201,9 +201,9 @@ nav {
 
 .main {
   width: calc(100% - 64px);
+  height: 100%;
   margin-left: 64px;
   text-align: center;
-  height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -236,8 +236,14 @@ nav {
     right: 192px;
   }
   .main {
-    width: 100%;;
+    width: 100%;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 435px) {
+  .main {
+    height: fit-content;
   }
 }
 
