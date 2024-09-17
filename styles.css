@@ -103,7 +103,7 @@ button.btn3 {
   border: 1px solid var(--btn-primary);
   cursor: pointer;
   padding: 0px 0px;
-  border-radius: 100%;
+  border-radius: 5px;
   font-weight: bold;
   transition: all 0.3s ease;
   box-shadow: 0 6px 0 var(--btn-primary);
