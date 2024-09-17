@@ -9,8 +9,8 @@ ENV NODE_ENV="production"
 
 FROM base as build
 
-COPY --link package.json pnpm-lock.yaml ./
-RUN pnpm install --omit=dev
+COPY --link package.json ./
+RUN npm install --omit=dev
 
 COPY --link . .
 
