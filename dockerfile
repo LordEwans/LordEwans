@@ -1,13 +1,13 @@
 # syntax = docker/dockerfile:1
 
 ARG NODE_VERSION=21.6.2
-FROM node:${NODE_VERSION}-slim as base
+FROM node:${NODE_VERSION}-slim AS base
 
 WORKDIR /
 
 ENV NODE_ENV="production"
 
-FROM base as build
+FROM base AS build
 
 COPY --link package.json ./
 RUN npm install --omit=dev
