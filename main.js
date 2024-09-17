@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // initialize smooth scrolling and event listeners
   new SmoothScroll(document, 60, 8);
 
   const body = document.querySelector("body");
 
-  const button = document.getElementById("btn0");
-
+  // handle keydown events for navigation and button activation
   body.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (button) {
       if (button) {
         if (
-          !(e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") &&
-          !(e.ctrlKey && e.key.toLowerCase() === "r")
+          !(e.ctrlKey && e.shiftKey && e.key.length == 1) &&
+          !(e.ctrlKey && e.key.length == 1)
         ) {
           e.preventDefault();
           button.classList.add("active");
@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   });
+  // handle keyup events for navigation and button deactivation
   body.addEventListener("keyup", (e) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
@@ -60,68 +61,68 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Get all the sections you want to track
-  const sections = document.querySelectorAll("section"); // Replace 'section' with your actual section selector if needed
+  // get all the sections you want to track
+  const sections = document.querySelectorAll("section"); // replace 'section' with your actual section selector if needed
 
-  // Loop through each section
+  // loop through each section
   sections.forEach((section) => {
-    // Get the section's position relative to the viewport
+    // get the section's position relative to the viewport
     const rect = section.getBoundingClientRect();
 
-    // Check if the section is more than 50% visible in the viewport
+    // check if the section is more than 50% visible in the viewport
     if (
       rect.top < window.innerHeight * 0.5 &&
       rect.bottom > window.innerHeight * 0.5
     ) {
-      // Find the corresponding button in the navigation
-      const navButton = document.querySelector(`nav button#${section.id}`); // Assuming you have anchor links in your navigation
+      // find the corresponding button in the navigation
+      const navButton = document.querySelector(`nav button#${section.id}`); // assuming you have anchor links in your navigation
 
-      // Add the 'active' class to the button
+      // add the 'active' class to the button
       navButton.classList.add("active");
     } else {
       const navButton = document.querySelector(`nav button#${section.id}`);
-      // Remove the 'active' class if the section is not visible
+      // remove the 'active' class if the section is not visible
       navButton.classList.remove("active");
     }
   });
 
-  // Add an event listener for scroll events
+  // add an event listener for scroll events
   window.addEventListener("scroll", () => {
-    // Get all the sections you want to track
-    const sections = document.querySelectorAll("section"); // Replace 'section' with your actual section selector if needed
+    // get all the sections you want to track
+    const sections = document.querySelectorAll("section"); // replace 'section' with your actual section selector if needed
 
-    // Loop through each section
+    // loop through each section
     sections.forEach((section) => {
-      // Get the section's position relative to the viewport
+      // get the section's position relative to the viewport
       const rect = section.getBoundingClientRect();
 
-      // Check if the section is more than 50% visible in the viewport
+      // check if the section is more than 50% visible in the viewport
       if (
         rect.top < window.innerHeight * 0.65 &&
         rect.bottom > window.innerHeight * 0.65
       ) {
-        // Find the corresponding button in the navigation
-        const navButton = document.querySelector(`nav button#${section.id}`); // Assuming you have anchor links in your navigation
+        // find the corresponding button in the navigation
+        const navButton = document.querySelector(`nav button#${section.id}`); // assuming you have anchor links in your navigation
 
-        // Add the 'active' class to the button
+        // add the 'active' class to the button
         navButton.classList.add("active");
       } else {
         const navButton = document.querySelector(`nav button#${section.id}`);
-        // Remove the 'active' class if the section is not visible
+        // remove the 'active' class if the section is not visible
         navButton.classList.remove("active");
       }
     });
   });
 
-  // Select all navigation buttons
+  // select all navigation buttons
   const navButtons = document.querySelectorAll("nav button");
 
-  // Add click event listeners to each button
+  // add click event listeners to each button
   navButtons.forEach((button) => {
     button.addEventListener("click", (e) => {
-      e.preventDefault(); // Prevent default jumpy behavior
+      e.preventDefault(); // prevent default jumpy behavior
 
-      // Use smooth scrolling to reach the target section
+      // use smooth scrolling to reach the target section
       document.querySelector(`section#${button.id}`).scrollIntoView({
         behavior: "smooth",
       });
@@ -129,6 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// provides smooth scrolling functionality
 function SmoothScroll(target, speed, smooth) {
   if (target === document)
     target =
@@ -142,7 +144,7 @@ function SmoothScroll(target, speed, smooth) {
   var frame =
     target === document.body && document.documentElement
       ? document.documentElement
-      : target; // safari is the new IE
+      : target; // safari is the new ie
 
   target.addEventListener("mousewheel", scrolled, { passive: false });
   target.addEventListener("DOMMouseScroll", scrolled, { passive: false });
@@ -162,9 +164,9 @@ function SmoothScroll(target, speed, smooth) {
     if (e.detail) {
       if (e.wheelDelta)
         return (e.wheelDelta / e.detail / 40) * (e.detail > 0 ? 1 : -1);
-      // Opera
-      else return -e.detail / 3; // Firefox
-    } else return e.wheelDelta / 120; // IE,Safari,Chrome
+      // opera
+      else return -e.detail / 3; // firefox
+    } else return e.wheelDelta / 120; // ie,safari,chrome
   }
 
   function update() {
@@ -179,7 +181,7 @@ function SmoothScroll(target, speed, smooth) {
   }
 
   var requestFrame = (function () {
-    // requestAnimationFrame cross browser
+    // requestanimationframe cross browser
     return (
       window.requestAnimationFrame ||
       window.webkitRequestAnimationFrame ||

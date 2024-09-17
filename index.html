@@ -8,10 +8,8 @@
 	<script src="main.js"></script>
 </head>
 <body>
-	<div
-		style="display: flex; align-items: center; justify-content: start; flex-direction: row; height: 100%; width: 100%;">
-		<nav
-			style="display: flex; flex-direction: column; align-items: center; justify-content: start; width: 54px; position: fixed;">
+	<div class="container">
+		<nav>
 			<button id="home" class="btn3" title="Go Home"><img src="./img/svgs/home.svg" alt="Home Icon"></button>
 			<button id="about" class="btn2" title="About Me"><img src="img/svgs/user.svg" alt="About Icon"></button>
 			<button id="portfolio" class="btn3" title="View Portfolio"><img src="img/svgs/code.svg"
@@ -19,18 +17,14 @@
 			<button id="contact" class="btn2" title="Contact Me"><img src="img/svgs/at-sign.svg"
 					alt="Contact Icon"></button>
 		</nav>
-		<div id="main" style="width: calc(100% - 64px); margin-left: 64px; text-align: center; height: 100%;">
-			<section id="home"
-				style="display: flex; align-items: center; justify-content: center; flex-direction: column; height: 100%; width: 100%;">
-				<h1 style="color: var(--btn-primary); font-size: 3rem; line-height: inherit; margin: 0;">hey there, I'm
-					Ewanretor/ewanretə(r)/.</h1>
-				<h2 style="color: var(--btn-primary); font-size: 1.5rem; margin: 0;">a software engineer, founder and
-					indie hacker</h2>
+		<div id="main" class="main">
+			<section id="home" style="height: 100%; width: 100%;">
+				<h1>hey there, I'm Ewanretor /ewanretə(r)/.</h1>
+				<h3>a software engineer, founder and indie hacker</h3>
 				<div style="display: flex; align-items: center; justify-content: start;">
-					<button
-						onclick="window.open('https://cal.com/ewanretor-giwa-okugbe-u0xylh', '_blank')"
-						id="btn0" class="btn0">Book Meeting</button>
-					<button onclick="window.open('mailto:hey@lordewan.com', '_blank')" id="btn1"
+					<button onclick="window.open('https://cal.com/ewanretor-giwa-okugbe-u0xylh', '_blank')" id="btn0"
+						class="btn0">Book Meeting</button>
+					<button onclick="window.open('mailto:hey@lordewan.com', '_self')" id="btn1"
 						class="btn1">Email</button>
 				</div>
 				<p>Press the Enter key to <span class="ib">Book a Meeting</span> or hold the Shift key alongside Enter
@@ -38,42 +32,41 @@
 					<span class="ib">Email</span>.
 				</p>
 			</section>
-			<section id="about"
-				style="display: flex; align-items: center; justify-content: center; flex-direction: column; height: 50%; width: 100%;">
+			<section id="about" style="height: 50%; width: 100%;">
 				<div class=" alphabets"
-				style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: 100%;">
-				<button id="btn-q" class="btn3">Q</button>
-				<button id="btn-w" class="btn2">W</button>
-				<button id="btn-e" class="btn3">E</button>
-				<button id="btn-r" class="btn2">R</button>
-				<button id="btn-t" class="btn3">T</button>
-				<button id="btn-y" class="btn2">Y</button>
-				<button id="btn-u" class="btn3">U</button>
-				<button id="btn-i" class="btn2">I</button>
-				<button id="btn-o" class="btn3">O</button>
-				<button id="btn-p" class="btn2">P</button>
-				<button id="btn-a" class="btn3">A</button>
-				<button id="btn-s" class="btn2">S</button>
-				<button id="btn-d" class="btn3">D</button>
-				<button id="btn-f" class="btn2">F</button>
-				<button id="btn-g" class="btn3">G</button>
-				<button id="btn-h" class="btn2">H</button>
-				<button id="btn-j" class="btn3">J</button>
-				<button id="btn-k" class="btn2">K</button>
-				<button id="btn-l" class="btn3">L</button>
-				<button id="btn-z" class="btn2">Z</button>
-				<button id="btn-x" class="btn3">X</button>
-				<button id="btn-c" class="btn2">C</button>
-				<button id="btn-v" class="btn3">V</button>
-				<button id="btn-b" class="btn2">B</button>
-				<button id="btn-n" class="btn3">N</button>
-				<button id="btn-m" class="btn2">M</button>
+					style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: 100%;">
+					<button id="btn-q" class="btn3">Q</button>
+					<button id="btn-w" class="btn2">W</button>
+					<button id="btn-e" class="btn3">E</button>
+					<button id="btn-r" class="btn2">R</button>
+					<button id="btn-t" class="btn3">T</button>
+					<button id="btn-y" class="btn2">Y</button>
+					<button id="btn-u" class="btn3">U</button>
+					<button id="btn-i" class="btn2">I</button>
+					<button id="btn-o" class="btn3">O</button>
+					<button id="btn-p" class="btn2">P</button>
+					<button id="btn-a" class="btn3">A</button>
+					<button id="btn-s" class="btn2">S</button>
+					<button id="btn-d" class="btn3">D</button>
+					<button id="btn-f" class="btn2">F</button>
+					<button id="btn-g" class="btn3">G</button>
+					<button id="btn-h" class="btn2">H</button>
+					<button id="btn-j" class="btn3">J</button>
+					<button id="btn-k" class="btn2">K</button>
+					<button id="btn-l" class="btn3">L</button>
+					<button id="btn-z" class="btn2">Z</button>
+					<button id="btn-x" class="btn3">X</button>
+					<button id="btn-c" class="btn2">C</button>
+					<button id="btn-v" class="btn3">V</button>
+					<button id="btn-b" class="btn2">B</button>
+					<button id="btn-n" class="btn3">N</button>
+					<button id="btn-m" class="btn2">M</button>
+				</div>
+				<p>Press any of the keys to toggle the corresponding <span class="ib">Button</span>.</p>
+			</section>
+			<section id="portfolio"></section>
+			<section id="contact"></section>
 		</div>
-		<p>Press any of the keys to toggle the corresponding <span class="ib">Button</span>.</p>
-		</section>
-		<section id="portfolio"></section>
-		<section id="contact"></section>
-	</div>
 	</div>
 </body>
 </html>

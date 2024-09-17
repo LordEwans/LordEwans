@@ -62,11 +62,13 @@ body {
   background: var(--primary);
   color: black;
 }
-button.btn0::selection {
+button.btn0::selection,
+button.btn2::selection {
   background: black;
   color: var(--primary);
 }
-button.btn1::selection {
+button.btn1::selection,
+button.btn3::selection {
   background: black;
   color: white;
 }
@@ -152,4 +154,96 @@ button.active,
   font-weight: bold;
   font-style: italic;
   background: var(--primary);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+h1 {
+  color: var(--btn-primary); font-size: 3rem; line-height: inherit; margin: 0;
+}
+
+h2 {
+  color: var(--btn-primary); font-size: 2rem; line-height: inherit; margin: 0;
+}
+
+h3 {
+  color: var(--btn-primary); font-size: 1.5rem; line-height: inherit; margin: 0;
+}
+
+h4 {
+  color: var(--btn-primary); font-size: 1rem; line-height: inherit; margin: 0;
+}
+
+h5 {
+  color: var(--btn-primary); font-size: 0.75rem; line-height: inherit; margin: 0;
+}
+
+h6 {
+  color: var(--btn-primary); font-size: 0.5rem; line-height: inherit; margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 54px;
+  position: fixed;
+}
+
+.main {
+  width: calc(100% - 64px);
+  margin-left: 64px;
+  text-align: center;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 0.75rem;
+  }
+  h5 {
+    font-size: 0.5rem;
+  }
+  h6 {
+    font-size: 0.25rem;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav {
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    right: 192px;
+  }
+  .main {
+    width: 100%;;
+    margin-left: 0;
+  }
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
