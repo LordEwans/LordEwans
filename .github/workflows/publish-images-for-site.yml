@@ -1,0 +1,31 @@
+name: Publish Sites to DockerHub and Koyeb
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches:
+    - main
+
+jobs:
+    publish_landing:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v3
+            - name: build
+              run: |
+                docker build . -t lordewan/lordewan:latest
+              working-directory: ./
+            - name: publish
+              run: |
+                docker login -u lordewan -p ${{ secrets.DOCKERHUB_TOKEN }}
+                docker push lordewan/lordewan:latest
+              working-directory: ./
+            - name: Install and configure the Koyeb CLI
+              uses: koyeb-community/install-koyeb-cli@v2
+              with:
+                api_token: "${{ secrets.KOYEB_TOKEN }}"
+                github_token: "${{ secrets.GITHUB_TOKEN }}"
+            - name: Deploy to Koyeb
+              run: koyeb service redeploy weekly-giselle/lordewan
