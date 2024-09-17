@@ -7,19 +7,12 @@ WORKDIR /
 
 ENV NODE_ENV="production"
 
-FROM base AS build
-
-COPY --link package.json ./
-RUN npm install --omit=dev
-
-COPY --link . .
-
-
 FROM base
 
-COPY --from=build / /
+COPY . .
+RUN npm install --omit=dev
 
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000
 ENV HOST=0
-CMD [ "node", "./server" ]
+CMD [ "node", "./server/index.mjs" ]
