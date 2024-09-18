@@ -458,9 +458,3 @@ section {
     transform: translateX(-50%);
   }
 }
-
-@media (max-width: 435px) {
-  .main {
-    height: fit-content;
-  }
-}
