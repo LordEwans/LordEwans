@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // check if the section is more than 50% visible in the viewport
     if (
-      rect.top < window.innerHeight * 0.5 &&
+      rect.top < window.innerHeight * 0.5 ||
       rect.bottom > window.innerHeight * 0.5
     ) {
       // find the corresponding button in the navigation
@@ -119,6 +119,8 @@ document.addEventListener("DOMContentLoaded", () => {
       // use smooth scrolling to reach the target section
       document.querySelector(`section#${button.id}`).scrollIntoView({
         behavior: "smooth",
+        block: "center",
+        inline: "nearest",
       });
     });
   });
