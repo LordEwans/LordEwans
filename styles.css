@@ -167,27 +167,45 @@ button.active,
 }
 
 h1 {
-  color: var(--btn-primary); font-size: 3rem; line-height: inherit; margin: 0;
+  color: var(--btn-primary);
+  font-size: 3rem;
+  line-height: inherit;
+  margin: 0;
 }
 
 h2 {
-  color: var(--btn-primary); font-size: 2rem; line-height: inherit; margin: 0;
+  color: var(--btn-primary);
+  font-size: 2rem;
+  line-height: inherit;
+  margin: 0;
 }
 
 h3 {
-  color: var(--btn-primary); font-size: 1.5rem; line-height: inherit; margin: 0;
+  color: var(--btn-primary);
+  font-size: 1.5rem;
+  line-height: inherit;
+  margin: 0;
 }
 
 h4 {
-  color: var(--btn-primary); font-size: 1rem; line-height: inherit; margin: 0;
+  color: var(--btn-primary);
+  font-size: 1rem;
+  line-height: inherit;
+  margin: 0;
 }
 
 h5 {
-  color: var(--btn-primary); font-size: 0.75rem; line-height: inherit; margin: 0;
+  color: var(--btn-primary);
+  font-size: 0.75rem;
+  line-height: inherit;
+  margin: 0;
 }
 
 h6 {
-  color: var(--btn-primary); font-size: 0.5rem; line-height: inherit; margin: 0;
+  color: var(--btn-primary);
+  font-size: 0.5rem;
+  line-height: inherit;
+  margin: 0;
 }
 
 nav {
@@ -205,6 +223,20 @@ nav {
   margin-left: 64px;
   text-align: center;
 }
+
+.alphabets0,
+.alphabets1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.alphabets1 {
+  visibility: hidden;
+}
+
 
 @media (max-width: 768px) {
   h1 {
@@ -238,6 +270,12 @@ nav {
   .main {
     width: 100%;
     margin-left: 0;
+  }
+  .alphabets0 {
+    visibility: hidden;
+  }
+  .alphabets1 {
+    visibility: visible;
   }
 }
 
