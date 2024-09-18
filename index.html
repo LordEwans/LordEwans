@@ -6,22 +6,25 @@
 	<link rel="stylesheet" href="styles.css">
 	<title>lord ewan (Σ, ∆)</title>
 	<script src="main.js"></script>
+	<script type="module" src="components.js"></script>
 </head>
 <body>
 	<div class="container">
 		<nav>
-			<button id="home" class="btn3" title="Go Home"><img src="./img/svgs/home.svg" alt="Home Icon"></button>
-			<button id="about" class="btn2" title="About Me"><img src="img/svgs/user.svg" alt="About Icon"></button>
-			<button id="portfolio" class="btn3" title="View Portfolio"><img src="img/svgs/code.svg"
+			<button id="home" class="btn3 nav" data-tooltip="Go Home"><img src="./img/svgs/home.svg"
+					alt="Home Icon"></button>
+			<button id="about" class="btn2 nav" data-tooltip="About Me"><img src="img/svgs/user.svg"
+					alt="About Icon"></button>
+			<button id="portfolio" class="btn3 nav" data-tooltip="Portfolio"><img src="img/svgs/code.svg"
 					alt="Portfolio Icon"></button>
-			<button id="contact" class="btn2" title="Contact Me"><img src="img/svgs/at-sign.svg"
+			<button id="contact" class="btn2 nav" data-tooltip="Contact Me"><img src="img/svgs/at-sign.svg"
 					alt="Contact Icon"></button>
 		</nav>
 		<div id="main" class="main">
 			<section id="home" class="home" style="height: 100%; width: 100%;">
 				<h1>hey there, I'm Ewanretor /ewanretə(r)/</h1>
 				<h3>a software engineer, founder and indie hacker</h3>
-				<div style="display: flex; align-items: center; justify-content: start;">
+				<div style="display: flex; align-items: center; justify-content: start; margin-bottom: 8px;">
 					<button onclick="window.open('https://cal.com/ewanretor-giwa-okugbe-u0xylh', '_blank')" id="btn0"
 						class="btn0">Book Meeting</button>
 					<button onclick="window.open('mailto:hey@lordewan.com', '_self')" id="btn1"
@@ -33,43 +36,78 @@
 				</p>
 			</section>
 			<section id="about" style="height: 50%; width: 100%;">
-				<div class="alphabets0">
-					<button id="btn-q" class="btn3">Q</button>
-					<button id="btn-w" class="btn2">W</button>
-					<button id="btn-e" class="btn3">E</button>
-					<button id="btn-r" class="btn2">R</button>
-					<button id="btn-t" class="btn3">T</button>
-					<button id="btn-y" class="btn2">Y</button>
-					<button id="btn-u" class="btn3">U</button>
-					<button id="btn-i" class="btn2">I</button>
-					<button id="btn-o" class="btn3">O</button>
-					<button id="btn-p" class="btn2">P</button>
-					<button id="btn-a" class="btn3">A</button>
-					<button id="btn-s" class="btn2">S</button>
-					<button id="btn-d" class="btn3">D</button>
-					<button id="btn-f" class="btn2">F</button>
-					<button id="btn-g" class="btn3">G</button>
-					<button id="btn-h" class="btn2">H</button>
-					<button id="btn-j" class="btn3">J</button>
-					<button id="btn-k" class="btn2">K</button>
-					<button id="btn-l" class="btn3">L</button>
-					<button id="btn-z" class="btn2">Z</button>
-					<button id="btn-x" class="btn3">X</button>
-					<button id="btn-c" class="btn2">C</button>
-					<button id="btn-v" class="btn3">V</button>
-					<button id="btn-b" class="btn2">B</button>
-					<button id="btn-n" class="btn3">N</button>
-					<button id="btn-m" class="btn2">M</button>
-				</div>
-				<div class="alphabets1">
-					<button id="btn-q" class="btn3">Q</button>
-					<button id="btn-w" class="btn2">W</button>
-					<button id="btn-e" class="btn3">E</button>
-					<button id="btn-r" class="btn2">R</button>
-					<button id="btn-t" class="btn3">T</button>
-					<button id="btn-y" class="btn2">Y</button>
-				</div>
+				<div id="alphabets"></div>
 				<p>Press any of the keys to toggle the corresponding <span class="ib">Button</span>.</p>
+				<h2>Who am I?</h2>
+				<p>I'm a Nigerian, with an <span class="ib">enterpreneural</span> and <span class="ib">innovative</span>
+					spirit. I was born Ewanretor Giwa-Okugbe on the 13th of Feburary, 2006.</p>
+				<p>I got into software development in 2019, months before the pandemic, and progressively gained
+					mastery of <span class="ib">JavaScript</span>, among other technologies:
+				</p>
+				</p>
+
+				<div class="skills">
+					<div class="carousel">
+						<div class="carousel-track0">
+							<button class="btn1" data-tooltip="HTML5"><img src="img/svgs/html5.svg" height="24px"
+									width="24px" alt="html"></button>
+							<button class="btn1" data-tooltip="CSS3"><img src="img/svgs/css3.svg" height="24px"
+									width="24px" alt="css"></button>
+							<button class="btn1" data-tooltip="Tailwind CSS"><img src="img/svgs/tailwindcss.svg"
+									height="24px" width="24px" alt="tailwindcss"></button>
+							<button class="btn1" data-tooltip="TypeScript"><img src="img/svgs/typescript.svg"
+									height="24px" width="24px" alt="ts"></button>
+							<button class="btn1" data-tooltip="Next.js"><img src="img/svgs/nextdotjs.svg" height="24px"
+									width="24px" alt="nextjs"></button>
+							<button class="btn1" data-tooltip="Nuxt.js"><img src="img/svgs/nuxtdotjs.svg" height="24px"
+									width="24px" alt="nuxtjs"></button>
+							<button class="btn1" data-tooltip="Go"><img src="img/svgs/go.svg" height="24px" width="24px"
+									alt="go"></button>
+							<button class="btn1" data-tooltip="Docker"><img src="img/svgs/docker.svg" height="24px"
+									width="24px" alt="docker"></button>
+							<button class="btn1" data-tooltip="Linux"><img src="img/svgs/linux.svg" height="24px"
+									width="24px" alt="linux"></button>
+							<button class="btn1" data-tooltip="PostgreSQL"><img src="img/svgs/postgresql.svg"
+									height="24px" width="24px" alt="postgresql"></button>
+							<button class="btn1" data-tooltip="Drizzle"><img src="img/svgs/drizzle.svg" height="24px"
+									width="24px" alt="drizzle"></button>
+							<button class="btn1" data-tooltip="MongoDB"><img src="img/svgs/mongodb.svg" height="24px"
+									width="24px" alt="mongodb"></button>
+						</div>
+						<div class="carousel-track1">
+							<button class="btn1" data-tooltip="HTML5"><img src="img/svgs/html5.svg" height="24px"
+									width="24px" alt="html"></button>
+							<button class="btn1" data-tooltip="CSS3"><img src="img/svgs/css3.svg" height="24px"
+									width="24px" alt="css"></button>
+							<button class="btn1" data-tooltip="Tailwind CSS"><img src="img/svgs/tailwindcss.svg"
+									height="24px" width="24px" alt="tailwindcss"></button>
+							<button class="btn1" data-tooltip="TypeScript"><img src="img/svgs/typescript.svg"
+									height="24px" width="24px" alt="ts"></button>
+							<button class="btn1" data-tooltip="Next.js"><img src="img/svgs/nextdotjs.svg" height="24px"
+									width="24px" alt="nextjs"></button>
+							<button class="btn1" data-tooltip="Nuxt.js"><img src="img/svgs/nuxtdotjs.svg" height="24px"
+									width="24px" alt="nuxtjs"></button>
+							<button class="btn1" data-tooltip="Go"><img src="img/svgs/go.svg" height="24px" width="24px"
+									alt="go"></button>
+							<button class="btn1" data-tooltip="Docker"><img src="img/svgs/docker.svg" height="24px"
+									width="24px" alt="docker"></button>
+							<button class="btn1" data-tooltip="Linux"><img src="img/svgs/linux.svg" height="24px"
+									width="24px" alt="linux"></button>
+							<button class="btn1" data-tooltip="PostgreSQL"><img src="img/svgs/postgresql.svg"
+									height="24px" width="24px" alt="postgresql"></button>
+							<button class="btn1" data-tooltip="Drizzle"><img src="img/svgs/drizzle.svg" height="24px"
+									width="24px" alt="drizzle"></button>
+							<button class="btn1" data-tooltip="MongoDB"><img src="img/svgs/mongodb.svg" height="24px"
+									width="24px" alt="mongodb"></button>
+						</div>
+					</div>
+				</div>
+
+				<p>
+					Currently, my primarily focus is running <a href="https://0xzero.org">ZERO Labs</a>, where we
+					develop self-sovereign identity solutions. Additionally, I am co-founding a startup dedicated to
+					making learning more dynamic and accessible.
+				</p>
 			</section>
 			<section id="portfolio"></section>
 			<section id="contact"></section>

@@ -125,6 +125,33 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+  
+  const buttons = document.querySelectorAll('.carousel-track0 button, .carousel-track1 button');
+
+  const techLinks = {
+    html: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
+    css: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+    tailwindcss: 'https://tailwindcss.com/',
+    typescript: 'https://www.typescriptlang.org/',
+    nextjs: 'https://nextjs.org/',
+    nuxtjs: 'https://nuxt.com/',
+    go: 'https://go.dev/',
+    docker: 'https://www.docker.com/',
+    linux: 'https://www.linux.org/',
+    postgresql: 'https://www.postgresql.org/',
+    drizzle: 'https://www.drizzle.org/',
+    mongodb: 'https://www.mongodb.com/',
+  };
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const tech = button.querySelector('img').alt;
+      const link = techLinks[tech];
+      if (link) {
+        window.open(link, '_blank');
+      }
+    });
+  });
 });
 
 // provides smooth scrolling functionality
