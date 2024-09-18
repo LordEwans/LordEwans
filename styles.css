@@ -353,10 +353,6 @@ nav {
     animation: slideIn 16s infinite linear;
     width: 300vw;
   }
-  .carousel-track0 button,
-  .carousel-track1 button {
-    flex: 0 0 calc(100% / 54px);
-  }
   .carousel:hover {
     .carousel-track0,
     .carousel-track1 {
