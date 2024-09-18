@@ -345,9 +345,25 @@ nav {
   transition: transform 0.6s ease-in-out;
 }
 
+.iframe-box {
+  width: 724px;
+  min-height: 240px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: #fff; /* White background */
+  border: 1px solid var(--btn-primary) !important;
+  border-radius: 5px;
+  box-shadow: 0 6px 0 var(--btn-primary);
+  margin-bottom: 20px;
+  transition: transform 0.6s ease-in-out;
+}
+
 @media (min-width: 1280px) {
   .project-box {
     width: 1146px;
+  }
+  .iframe-box {
+    width: 1186px;
   }
 }
 
@@ -423,6 +439,9 @@ section {
   }
   .project-box {
     width: calc(100vw - 64px);
+  }
+  .iframe-box {
+    width: calc(100vw - 24px);
   }
   .alphabets0 {
     display: none;

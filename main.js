@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // initialize smooth scrolling and event listeners
-  new SmoothScroll(document, 120, 8);
-
   const body = document.querySelector("body");
 
   // handle keydown events for navigation and button activation
