@@ -170,7 +170,7 @@ button[data-tooltip]:hover::after {
   opacity: 1;
 }
 
-button:active[data-tooltip]:hover::after, button:focus[data-tooltip]:hover::after {
+button:active[data-tooltip]:hover::after, button:focus[data-tooltip]::after {
   opacity: 0;
 }
 
