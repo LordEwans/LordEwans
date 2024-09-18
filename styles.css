@@ -339,7 +339,7 @@ nav {
     display: flex;
   }
   .carousel {
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -351,7 +351,7 @@ nav {
     display: flex;
     transition: transform 0.3s ease-in-out;
     animation: slideIn 16s infinite linear;
-    width: 300%;
+    width: 300vw;
   }
   .carousel-track0 button,
   .carousel-track1 button {
