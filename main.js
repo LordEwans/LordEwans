@@ -17,18 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
       button.classList.add("active");
     }
     const buttonId = `btn-${e.key.toLowerCase()}`;
-    const button = document.getElementById(buttonId);
-    if (button) {
-      if (button) {
-        if (
-          !(e.ctrlKey && e.shiftKey && e.key.length == 1) &&
-          !(e.ctrlKey && e.key.length == 1)
-        ) {
-          e.preventDefault();
-          button.classList.add("active");
-          button.click();
-        }
-      }
+    const buttons = document.querySelectorAll(`button#${buttonId}`);
+    if (
+      !(e.ctrlKey && e.shiftKey && e.key.length == 1) &&
+      !(e.ctrlKey && e.key.length == 1)
+    ) {
+      buttons.forEach((button) => {
+        e.preventDefault();
+        button.classList.add("active");
+        button.click();
+      });
     }
   });
   // handle keyup events for navigation and button deactivation
@@ -46,18 +44,17 @@ document.addEventListener("DOMContentLoaded", () => {
       button.classList.remove("active");
     }
     const buttonId = `btn-${e.key.toLowerCase()}`;
-    const button = document.getElementById(buttonId);
-    if (button) {
-      if (button) {
-        if (
-          !(e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") &&
-          !(e.ctrlKey && e.key.toLowerCase() === "r")
-        ) {
-          e.preventDefault();
-          button.click();
-          button.classList.remove("active");
-        }
-      }
+    const buttons = document.querySelectorAll(`button#${buttonId}`);
+    if (
+      !(e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") &&
+      !(e.ctrlKey && e.key.toLowerCase() === "r")
+    ) {
+      console.log(buttons);
+      buttons.forEach((button) => {
+        e.preventDefault();
+        button.click();
+        button.classList.remove("active");
+      });
     }
   });
 

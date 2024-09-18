@@ -234,7 +234,7 @@ nav {
 }
 
 .alphabets1 {
-  visibility: hidden;
+  display: none;
 }
 
 
@@ -272,10 +272,10 @@ nav {
     margin-left: 0;
   }
   .alphabets0 {
-    visibility: hidden;
+    display: none;
   }
   .alphabets1 {
-    visibility: visible;
+    display: flex;
   }
 }
 
