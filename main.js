@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // initialize smooth scrolling and event listeners
-  new SmoothScroll(document, 60, 8);
+  new SmoothScroll(document, 120, 8);
 
   const body = document.querySelector("body");
 
