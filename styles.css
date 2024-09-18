@@ -1,3 +1,4 @@
+/* c:\Users\Lord Ewan\Documents\LordEwans\fonts.css */
 @font-face {
   font-family: "PixelifySans";
   src: url("fonts/PixelifySans.woff2");
@@ -31,12 +32,24 @@
   font-style: italic;
 }
 
+/* c:\Users\Lord Ewan\Documents\LordEwans\animations.css */
+@keyframes slideIn {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%); /* Adjust slide distance as needed */
+    }
+  }
+
+/* c:\Users\Lord Ewan\Documents\LordEwans\variables.css */
 :root {
   --primary: #ffd60a;
   --secondary: #ffc400;
   --btn-primary: #000;
 }
 
+/* c:\Users\Lord Ewan\Documents\LordEwans\base.css */
 body {
   background: white;
   color: black;
@@ -46,6 +59,7 @@ body {
   scroll-behavior: smooth;
 }
 
+/* c:\Users\Lord Ewan\Documents\LordEwans\scrollbar.css */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -59,6 +73,7 @@ body {
   border-radius: 8px;
 }
 
+/* c:\Users\Lord Ewan\Documents\LordEwans\selection.css */
 ::selection {
   background: var(--primary);
   color: black;
@@ -73,11 +88,13 @@ button.btn3::selection {
   background: black;
   color: white;
 }
-.ib::selection, a::selection {
+.ib::selection,
+a::selection {
   background: black;
   color: var(--primary);
 }
 
+/* c:\Users\Lord Ewan\Documents\LordEwans\buttons.css */
 button {
   border: none;
   outline: none;
@@ -135,6 +152,7 @@ button.active,
   transform: translateY(6px);
 }
 
+/* c:\Users\Lord Ewan\Documents\LordEwans\tooltips.css */
 button[data-tooltip] {
   position: relative; /* Required for tooltip positioning */
 }
@@ -170,24 +188,16 @@ button[data-tooltip]:hover::after {
   opacity: 1;
 }
 
-button:active[data-tooltip]:hover::after, button:focus[data-tooltip]::after {
+button:active[data-tooltip]:hover::after,
+button:focus[data-tooltip]::after {
   opacity: 0;
 }
 
+/* c:\Users\Lord Ewan\Documents\LordEwans\typography.css */
 .ib {
   font-weight: bold;
   font-style: italic;
   background: var(--primary);
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  flex-direction: row;
-  height: 100%;
-  width: 100%;
-  position: relative;
 }
 
 h1 {
@@ -243,6 +253,17 @@ a {
   background: var(--primary);
 }
 
+/* c:\Users\Lord Ewan\Documents\LordEwans\layout.css */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -250,6 +271,7 @@ nav {
   justify-content: start;
   width: 54px;
   position: fixed;
+  z-index: 10;
 }
 
 .main {
@@ -291,15 +313,82 @@ nav {
   display: none;
 }
 
-@media (max-width: 768px) {
-  @keyframes slideIn {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%); /* Adjust slide distance as needed */
-    }
+.projects-parent {
+  width: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+}
+
+.projects {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.project-box {
+  width: 684px;
+  min-height: 240px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: #fff; /* White background */
+  border: 1px solid var(--btn-primary);
+  border-radius: 5px;
+  box-shadow: 0 6px 0 var(--btn-primary);
+  padding: 20px; /* Internal spacing */
+  margin-bottom: 20px;
+  transition: transform 0.6s ease-in-out;
+}
+
+@media (min-width: 1280px) {
+  .project-box {
+    width: 1146px;
   }
+}
+
+.project-box h3 {
+  color: #333; /* Dark gray heading */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.project-box p {
+  color: #555; /* Slightly lighter gray for description */
+  line-height: 1.5; /* Improved readability */
+}
+
+.project-tech {
+  margin-top: 15px; /* Space above tech icons */
+}
+
+.projects .show-prev,
+.projects .show-next {
+  position: absolute;
+  top: 196px;
+  cursor: pointer;
+}
+
+.projects .show-prev {
+  left: 0;
+}
+
+.projects .show-next {
+  right: 0;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* c:\Users\Lord Ewan\Documents\LordEwans\media-queries.css */
+@media (max-width: 768px) {
   h1 {
     font-size: 2rem;
   }
@@ -331,6 +420,9 @@ nav {
   .main {
     width: 100%;
     margin-left: 0;
+  }
+  .project-box {
+    width: calc(100vw - 64px);
   }
   .alphabets0 {
     display: none;
@@ -371,11 +463,4 @@ nav {
   .main {
     height: fit-content;
   }
-}
-
-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }

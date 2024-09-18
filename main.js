@@ -95,8 +95,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // check if the section is more than 50% visible in the viewport
       if (
-        rect.top < window.innerHeight * 0.65 &&
-        rect.bottom > window.innerHeight * 0.65
+        rect.top < window.innerHeight * 0.5 &&
+        rect.bottom > window.innerHeight * 0.5
       ) {
         // find the corresponding button in the navigation
         const navButton = document.querySelector(`nav button#${section.id}`); // assuming you have anchor links in your navigation
@@ -125,33 +125,73 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
-  
-  const buttons = document.querySelectorAll('.carousel-track0 button, .carousel-track1 button');
+
+  const buttons = document.querySelectorAll("button");
 
   const techLinks = {
-    html: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
-    css: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
-    tailwindcss: 'https://tailwindcss.com/',
-    typescript: 'https://www.typescriptlang.org/',
-    nextjs: 'https://nextjs.org/',
-    nuxtjs: 'https://nuxt.com/',
-    go: 'https://go.dev/',
-    docker: 'https://www.docker.com/',
-    linux: 'https://www.linux.org/',
-    postgresql: 'https://www.postgresql.org/',
-    drizzle: 'https://www.drizzle.org/',
-    mongodb: 'https://www.mongodb.com/',
+    html: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    css: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    tailwindcss: "https://tailwindcss.com/",
+    ts: "https://www.typescriptlang.org/",
+    nextjs: "https://nextjs.org/",
+    nuxtjs: "https://nuxt.com/",
+    go: "https://go.dev/",
+    docker: "https://www.docker.com/",
+    linux: "https://www.linux.org/",
+    postgresql: "https://www.postgresql.org/",
+    drizzle: "https://www.drizzle.org/",
+    mongodb: "https://www.mongodb.com/",
   };
 
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      const tech = button.querySelector('img').alt;
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const tech = button.querySelector("img").alt;
       const link = techLinks[tech];
       if (link) {
-        window.open(link, '_blank');
+        window.open(link, "_blank");
       }
     });
   });
+  const projectsContainer = document.querySelector(".projects");
+  const firstProject = projectsContainer.firstElementChild;
+
+  function setProjectsWidth() {
+    projectsContainer.style.width = `${firstProject.offsetWidth}px`;
+  }
+
+  setProjectsWidth();
+
+  window.addEventListener("resize", setProjectsWidth);
+  const projectBoxes = document.querySelectorAll(".project-box");
+  const prevButton = document.querySelector(".show-prev");
+  const nextButton = document.querySelector(".show-next");
+  let currentProjectIndex = 0;
+
+  function showProject(index) {
+    projectBoxes.forEach((box) => {
+      const translateXValue = `translateX(-${index * 100}%)`;
+      box.style.transform = translateXValue;
+      currentProjectIndex = index;
+    });
+  }
+
+  function showNextProject() {
+    const nextIndex = (currentProjectIndex + 1) % projectBoxes.length;
+    showProject(nextIndex);
+    console.log(nextIndex);
+  }
+
+  function showPrevProject() {
+    const prevIndex =
+      (currentProjectIndex - 1 + projectBoxes.length) % projectBoxes.length;
+    showProject(prevIndex);
+    console.log(prevIndex);
+  }
+
+  prevButton.addEventListener("click", showPrevProject);
+  nextButton.addEventListener("click", showNextProject);
+
+  showProject(currentProjectIndex);
 });
 
 // provides smooth scrolling functionality
