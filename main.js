@@ -140,6 +140,13 @@ document.addEventListener("DOMContentLoaded", () => {
     postgresql: "https://www.postgresql.org/",
     drizzle: "https://www.drizzle.org/",
     mongodb: "https://www.mongodb.com/",
+    github: "https://github.com/lordewans",
+    likedin: "https://linkedin.com/in/ewanretorokugbe",
+    twitter: "https://x.com/ewanretorokugbe",
+    linktree: "https://linktr.ee/lordewan",
+    caldotcom: "https://cal.com/ewanretor-giwa-okugbe-u0xylh",
+    email: "mailto:hey@lordewan.xyz",
+    telegram: "https://t.me/lordewan"
   };
 
   buttons.forEach((button) => {
