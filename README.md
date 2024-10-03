@@ -1,20 +1,12 @@
 ## Introduction
 
-Hello, I’m Ewanretor Giwa-Okugbe. Backend, Blockchain, Web3 Developer.
+Hello, I’m Ewanretor Giwa-Okugbe. CEO [ZERO Labs](https://0xzero.org)
 
-### Versatile and Efficient
-I use a ton of tools, which includes but are not limited to these.
+I do research and development in several verticals and my most used languages on Github includes:
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=LordEwans&show_icons=true&locale=en&layout=donut&theme=transparent)
 
-### CV
-Download my CV (Resume), you just might consider me for that next role.
-<a href="/CV (Resume)/CV (Resume).pdf" target="_blank" download>CV (Resume)</a>
-
-### Contact
-Reach out to me via these media.
-- X: [Lord Ewan](https://twitter.com/ewanretorokugbe)
-- Email: [ewanretorokugbe@gmail.com](mailto:ewanretorokugbe@gmail.com)
+Simple visual of my activities on here:
 
 ![Github Stats](https://github-readme-stats.vercel.app/api?username=LordEwans&show_icons=true&theme=transparent)
 <!---
