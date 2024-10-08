@@ -1,6 +1,6 @@
 ## Introduction
 
-Hello, I’m Ewanretor Giwa-Okugbe. CEO @0xZeroLabs.
+Hello, I’m Ewanretor Giwa-Okugbe. CEO [@0xZeroLabs](https://github.com/0xzerolabs).
 
 I do research and development in several verticals and my most used languages on Github includes:
 
